@@ -1,0 +1,1142 @@
+[
+  {
+    "exact_match_count": 728,
+    "exact_match_rate": 0.455,
+    "folder": "gpt-6-astra",
+    "metric_version": "external_channel_sharing_matched_units_v3",
+    "metrics": {
+      "channels": {
+        "f1": 0.9157199688307427,
+        "precision": 0.9141827710448739,
+        "predicted": 12212,
+        "recall": 0.9172623449182483,
+        "reference": 12171,
+        "tp": 11164
+      },
+      "encoding": {
+        "f1": 0.976571285767837,
+        "precision": 0.9693042291950886,
+        "predicted": 16126,
+        "recall": 0.9839481304293088,
+        "reference": 15886,
+        "tp": 15631
+      },
+      "exact_group_structure": {
+        "f1": 0.8381710513542374,
+        "precision": 0.8449794480328832,
+        "predicted": 5109,
+        "recall": 0.8314714946070878,
+        "reference": 5192,
+        "tp": 4317
+      },
+      "field_bindings": {
+        "f1": 0.8586393494805683,
+        "precision": 0.8669939223936419,
+        "predicted": 17112,
+        "recall": 0.8504442533677271,
+        "reference": 17445,
+        "tp": 14836
+      },
+      "link_targets": {
+        "f1": 0.7806267806267806,
+        "precision": 0.8011695906432749,
+        "predicted": 342,
+        "recall": 0.7611111111111111,
+        "reference": 360,
+        "tp": 274
+      },
+      "repeated_groups": {
+        "f1": 0.9050632911392406,
+        "precision": 0.918526031102096,
+        "predicted": 2958,
+        "recall": 0.8919894944189101,
+        "reference": 3046,
+        "tp": 2717
+      },
+      "repetition_slots": {
+        "f1": 0.8798569015204214,
+        "precision": 0.91165568369028,
+        "predicted": 4856,
+        "recall": 0.8502016516228155,
+        "reference": 5207,
+        "tp": 4427
+      },
+      "sharing": {
+        "f1": 0.7844484132435774,
+        "precision": 0.6999264525619024,
+        "predicted": 4079,
+        "recall": 0.8921875,
+        "reference": 3200,
+        "tp": 2855
+      },
+      "sharing_all_groups": {
+        "f1": 0.6357158761968381,
+        "precision": 0.6183669049166125,
+        "predicted": 4617,
+        "recall": 0.6540664375715922,
+        "reference": 4365,
+        "tp": 2855
+      },
+      "variation": {
+        "f1": 0.9344723813222017,
+        "precision": 0.9420630260324917,
+        "predicted": 5109,
+        "recall": 0.9270030816640986,
+        "reference": 5192,
+        "tp": 4813
+      }
+    },
+    "model": "gpt-6-astra",
+    "sample_count": 1600,
+    "unit_exact_match": {
+      "aligned": 4813,
+      "correct": 3717,
+      "rate": 0.7722833991273634
+    }
+  },
+  {
+    "exact_match_count": 525,
+    "exact_match_rate": 0.328125,
+    "folder": "gpt-6-sol",
+    "metric_version": "external_channel_sharing_matched_units_v3",
+    "metrics": {
+      "channels": {
+        "f1": 0.8825558475689882,
+        "precision": 0.882193580165832,
+        "predicted": 12181,
+        "recall": 0.8829184126201627,
+        "reference": 12171,
+        "tp": 10746
+      },
+      "encoding": {
+        "f1": 0.9654000718789819,
+        "precision": 0.9644232652261897,
+        "predicted": 15319,
+        "recall": 0.9663788592360021,
+        "reference": 15288,
+        "tp": 14774
+      },
+      "exact_group_structure": {
+        "f1": 0.764540246625886,
+        "precision": 0.77090268259252,
+        "predicted": 5107,
+        "recall": 0.7582819722650231,
+        "reference": 5192,
+        "tp": 3937
+      },
+      "field_bindings": {
+        "f1": 0.8017178415963072,
+        "precision": 0.8175047664442326,
+        "predicted": 16784,
+        "recall": 0.7865290914302092,
+        "reference": 17445,
+        "tp": 13721
+      },
+      "link_targets": {
+        "f1": 0.7298444130127298,
+        "precision": 0.7435158501440923,
+        "predicted": 347,
+        "recall": 0.7166666666666667,
+        "reference": 360,
+        "tp": 258
+      },
+      "repeated_groups": {
+        "f1": 0.8645357686453576,
+        "precision": 0.8915242413672829,
+        "predicted": 2867,
+        "recall": 0.8391332895600788,
+        "reference": 3046,
+        "tp": 2556
+      },
+      "repetition_slots": {
+        "f1": 0.8195712380757001,
+        "precision": 0.8795684720387494,
+        "predicted": 4542,
+        "recall": 0.7672364125216056,
+        "reference": 5207,
+        "tp": 3995
+      },
+      "sharing": {
+        "f1": 0.6992092457420924,
+        "precision": 0.5966779133143005,
+        "predicted": 3853,
+        "recall": 0.8442893867058392,
+        "reference": 2723,
+        "tp": 2299
+      },
+      "sharing_all_groups": {
+        "f1": 0.5087408718743085,
+        "precision": 0.491975176546116,
+        "predicted": 4673,
+        "recall": 0.5266895761741123,
+        "reference": 4365,
+        "tp": 2299
+      },
+      "variation": {
+        "f1": 0.9030002912904166,
+        "precision": 0.9105149794399844,
+        "predicted": 5107,
+        "recall": 0.8956086286594761,
+        "reference": 5192,
+        "tp": 4650
+      }
+    },
+    "model": "gpt-6-sol",
+    "sample_count": 1600,
+    "unit_exact_match": {
+      "aligned": 4650,
+      "correct": 3160,
+      "rate": 0.6795698924731183
+    }
+  },
+  {
+    "exact_match_count": 599,
+    "exact_match_rate": 0.374375,
+    "folder": "claude-opus-5-5",
+    "metric_version": "external_channel_sharing_matched_units_v3",
+    "metrics": {
+      "channels": {
+        "f1": 0.9161020493517357,
+        "precision": 0.9329585143538632,
+        "predicted": 11739,
+        "recall": 0.8998438912168268,
+        "reference": 12171,
+        "tp": 10952
+      },
+      "encoding": {
+        "f1": 0.9663410022061141,
+        "precision": 0.9699481209667214,
+        "predicted": 15806,
+        "recall": 0.9627606129113289,
+        "reference": 15924,
+        "tp": 15331
+      },
+      "exact_group_structure": {
+        "f1": 0.809778903282361,
+        "precision": 0.8191133004926109,
+        "predicted": 5075,
+        "recall": 0.8006548536209553,
+        "reference": 5192,
+        "tp": 4157
+      },
+      "field_bindings": {
+        "f1": 0.8356758022956196,
+        "precision": 0.8541329981444903,
+        "predicted": 16707,
+        "recall": 0.817999426769848,
+        "reference": 17445,
+        "tp": 14270
+      },
+      "link_targets": {
+        "f1": 0.8057971014492754,
+        "precision": 0.8424242424242424,
+        "predicted": 330,
+        "recall": 0.7722222222222223,
+        "reference": 360,
+        "tp": 278
+      },
+      "repeated_groups": {
+        "f1": 0.8942454591750127,
+        "precision": 0.925834797891037,
+        "predicted": 2845,
+        "recall": 0.8647406434668418,
+        "reference": 3046,
+        "tp": 2634
+      },
+      "repetition_slots": {
+        "f1": 0.8732394366197183,
+        "precision": 0.9169659835199662,
+        "predicted": 4733,
+        "recall": 0.8334933743038218,
+        "reference": 5207,
+        "tp": 4340
+      },
+      "sharing": {
+        "f1": 0.7074585635359116,
+        "precision": 0.6270812928501469,
+        "predicted": 4084,
+        "recall": 0.8114702154626109,
+        "reference": 3156,
+        "tp": 2561
+      },
+      "sharing_all_groups": {
+        "f1": 0.5663423264042459,
+        "precision": 0.5473391750374011,
+        "predicted": 4679,
+        "recall": 0.5867124856815579,
+        "reference": 4365,
+        "tp": 2561
+      },
+      "variation": {
+        "f1": 0.936592967760787,
+        "precision": 0.9473891625615763,
+        "predicted": 5075,
+        "recall": 0.926040061633282,
+        "reference": 5192,
+        "tp": 4808
+      }
+    },
+    "model": "claude-opus-5-5",
+    "sample_count": 1600,
+    "unit_exact_match": {
+      "aligned": 4808,
+      "correct": 3366,
+      "rate": 0.7000831946755408
+    }
+  },
+  {
+    "exact_match_count": 638,
+    "exact_match_rate": 0.39875,
+    "folder": "claude-fable-5-1",
+    "metric_version": "external_channel_sharing_matched_units_v3",
+    "metrics": {
+      "channels": {
+        "f1": 0.8962189592779003,
+        "precision": 0.9075821398483572,
+        "predicted": 11870,
+        "recall": 0.8851368005915701,
+        "reference": 12171,
+        "tp": 10773
+      },
+      "encoding": {
+        "f1": 0.9692406692406692,
+        "precision": 0.9668143013030361,
+        "predicted": 15579,
+        "recall": 0.9716792465002257,
+        "reference": 15501,
+        "tp": 15062
+      },
+      "exact_group_structure": {
+        "f1": 0.8013251485920296,
+        "precision": 0.8108854269374877,
+        "predicted": 5071,
+        "recall": 0.7919876733436055,
+        "reference": 5192,
+        "tp": 4112
+      },
+      "field_bindings": {
+        "f1": 0.8238480806197938,
+        "precision": 0.8374089644147078,
+        "predicted": 16889,
+        "recall": 0.810719403840642,
+        "reference": 17445,
+        "tp": 14143
+      },
+      "link_targets": {
+        "f1": 0.8077922077922078,
+        "precision": 0.7585365853658537,
+        "predicted": 410,
+        "recall": 0.8638888888888889,
+        "reference": 360,
+        "tp": 311
+      },
+      "repeated_groups": {
+        "f1": 0.8768274239623592,
+        "precision": 0.8981067125645439,
+        "predicted": 2905,
+        "recall": 0.8565331582403152,
+        "reference": 3046,
+        "tp": 2609
+      },
+      "repetition_slots": {
+        "f1": 0.8449496460265231,
+        "precision": 0.8786810452094567,
+        "predicted": 4822,
+        "recall": 0.81371231035145,
+        "reference": 5207,
+        "tp": 4237
+      },
+      "sharing": {
+        "f1": 0.7317148125384143,
+        "precision": 0.6699493528418683,
+        "predicted": 3554,
+        "recall": 0.8060257278266757,
+        "reference": 2954,
+        "tp": 2381
+      },
+      "sharing_all_groups": {
+        "f1": 0.5533991865194654,
+        "precision": 0.5615566037735849,
+        "predicted": 4240,
+        "recall": 0.5454753722794959,
+        "reference": 4365,
+        "tp": 2381
+      },
+      "variation": {
+        "f1": 0.9172756503946214,
+        "precision": 0.9282192861368567,
+        "predicted": 5071,
+        "recall": 0.9065870570107858,
+        "reference": 5192,
+        "tp": 4707
+      }
+    },
+    "model": "claude-fable-5-1",
+    "sample_count": 1600,
+    "unit_exact_match": {
+      "aligned": 4707,
+      "correct": 3425,
+      "rate": 0.7276396855746761
+    }
+  },
+  {
+    "exact_match_count": 463,
+    "exact_match_rate": 0.289375,
+    "folder": "grok-4.7",
+    "metric_version": "external_channel_sharing_matched_units_v3",
+    "metrics": {
+      "channels": {
+        "f1": 0.8223002271319431,
+        "precision": 0.8266356692128861,
+        "predicted": 12044,
+        "recall": 0.8180100238271301,
+        "reference": 12171,
+        "tp": 9956
+      },
+      "encoding": {
+        "f1": 0.9605978737588154,
+        "precision": 0.9554686954700914,
+        "predicted": 14327,
+        "recall": 0.9657824185127699,
+        "reference": 14174,
+        "tp": 13689
+      },
+      "exact_group_structure": {
+        "f1": 0.709740196555415,
+        "precision": 0.7172074729596853,
+        "predicted": 5085,
+        "recall": 0.702426810477658,
+        "reference": 5192,
+        "tp": 3647
+      },
+      "field_bindings": {
+        "f1": 0.7623768183951196,
+        "precision": 0.7805537204972675,
+        "predicted": 16651,
+        "recall": 0.7450272284322156,
+        "reference": 17445,
+        "tp": 12997
+      },
+      "link_targets": {
+        "f1": 0.7226173541963016,
+        "precision": 0.7405247813411079,
+        "predicted": 343,
+        "recall": 0.7055555555555556,
+        "reference": 360,
+        "tp": 254
+      },
+      "repeated_groups": {
+        "f1": 0.7959533607681756,
+        "precision": 0.8330940416367552,
+        "predicted": 2786,
+        "recall": 0.7619829284307288,
+        "reference": 3046,
+        "tp": 2321
+      },
+      "repetition_slots": {
+        "f1": 0.7642577722874202,
+        "precision": 0.8236077213223874,
+        "predicted": 4507,
+        "recall": 0.7128864989437296,
+        "reference": 5207,
+        "tp": 3712
+      },
+      "sharing": {
+        "f1": 0.7384615384615385,
+        "precision": 0.7139821504462388,
+        "predicted": 2353,
+        "recall": 0.7646791078743741,
+        "reference": 2197,
+        "tp": 1680
+      },
+      "sharing_all_groups": {
+        "f1": 0.4313222079589217,
+        "precision": 0.4905109489051095,
+        "predicted": 3425,
+        "recall": 0.3848797250859107,
+        "reference": 4365,
+        "tp": 1680
+      },
+      "variation": {
+        "f1": 0.8490804709545587,
+        "precision": 0.8580137659783678,
+        "predicted": 5085,
+        "recall": 0.8403312788906009,
+        "reference": 5192,
+        "tp": 4363
+      }
+    },
+    "model": "grok-4.7",
+    "sample_count": 1600,
+    "unit_exact_match": {
+      "aligned": 4363,
+      "correct": 3131,
+      "rate": 0.7176254870501948
+    }
+  },
+  {
+    "exact_match_count": 523,
+    "exact_match_rate": 0.326875,
+    "folder": "qwen3.8-max-2026-09-02",
+    "metric_version": "external_channel_sharing_matched_units_v3",
+    "metrics": {
+      "channels": {
+        "f1": 0.8632485851845595,
+        "precision": 0.8881550360650039,
+        "predicted": 11507,
+        "recall": 0.8397009284364473,
+        "reference": 12171,
+        "tp": 10220
+      },
+      "encoding": {
+        "f1": 0.9714147454287788,
+        "precision": 0.9810793828108636,
+        "predicted": 14323,
+        "recall": 0.9619386637458927,
+        "reference": 14608,
+        "tp": 14052
+      },
+      "exact_group_structure": {
+        "f1": 0.7682688550214928,
+        "precision": 0.7795400475812847,
+        "predicted": 5044,
+        "recall": 0.7573189522342064,
+        "reference": 5192,
+        "tp": 3932
+      },
+      "field_bindings": {
+        "f1": 0.7779498481148371,
+        "precision": 0.8095828426207153,
+        "predicted": 16133,
+        "recall": 0.7486959014044139,
+        "reference": 17445,
+        "tp": 13061
+      },
+      "link_targets": {
+        "f1": 0.742296918767507,
+        "precision": 0.748587570621469,
+        "predicted": 354,
+        "recall": 0.7361111111111112,
+        "reference": 360,
+        "tp": 265
+      },
+      "repeated_groups": {
+        "f1": 0.8186062597267854,
+        "precision": 0.8648154914139569,
+        "predicted": 2737,
+        "recall": 0.7770847012475377,
+        "reference": 3046,
+        "tp": 2367
+      },
+      "repetition_slots": {
+        "f1": 0.7831995058678196,
+        "precision": 0.844020412691369,
+        "predicted": 4507,
+        "recall": 0.7305550220856539,
+        "reference": 5207,
+        "tp": 3804
+      },
+      "sharing": {
+        "f1": 0.7084663037356861,
+        "precision": 0.6195009848982271,
+        "predicted": 3046,
+        "recall": 0.827268741779921,
+        "reference": 2281,
+        "tp": 1887
+      },
+      "sharing_all_groups": {
+        "f1": 0.4502505368647101,
+        "precision": 0.4697535474234503,
+        "predicted": 4017,
+        "recall": 0.4323024054982818,
+        "reference": 4365,
+        "tp": 1887
+      },
+      "variation": {
+        "f1": 0.8778819851504494,
+        "precision": 0.890761300555115,
+        "predicted": 5044,
+        "recall": 0.8653697996918336,
+        "reference": 5192,
+        "tp": 4493
+      }
+    },
+    "model": "qwen3.8-max-2026-09-02",
+    "sample_count": 1600,
+    "unit_exact_match": {
+      "aligned": 4493,
+      "correct": 3199,
+      "rate": 0.7119964389049632
+    }
+  },
+  {
+    "exact_match_count": 328,
+    "exact_match_rate": 0.205,
+    "folder": "qwen-3.8-27b",
+    "metric_version": "external_channel_sharing_matched_units_v3",
+    "metrics": {
+      "channels": {
+        "f1": 0.7918312463232204,
+        "precision": 0.8103552077062011,
+        "predicted": 11627,
+        "recall": 0.7741352395037384,
+        "reference": 12171,
+        "tp": 9422
+      },
+      "encoding": {
+        "f1": 0.9535109320199985,
+        "precision": 0.9624887014160892,
+        "predicted": 13276,
+        "recall": 0.9446990980334171,
+        "reference": 13526,
+        "tp": 12778
+      },
+      "exact_group_structure": {
+        "f1": 0.6588028855527394,
+        "precision": 0.666995657323332,
+        "predicted": 5066,
+        "recall": 0.650808936825886,
+        "reference": 5192,
+        "tp": 3379
+      },
+      "field_bindings": {
+        "f1": 0.6943954038122027,
+        "precision": 0.726367847752598,
+        "predicted": 15974,
+        "recall": 0.6651189452565205,
+        "reference": 17445,
+        "tp": 11603
+      },
+      "link_targets": {
+        "f1": 0.5950840879689522,
+        "precision": 0.5569007263922519,
+        "predicted": 413,
+        "recall": 0.6388888888888888,
+        "reference": 360,
+        "tp": 230
+      },
+      "repeated_groups": {
+        "f1": 0.7436759242879887,
+        "precision": 0.8062907556578442,
+        "predicted": 2607,
+        "recall": 0.6900853578463558,
+        "reference": 3046,
+        "tp": 2102
+      },
+      "repetition_slots": {
+        "f1": 0.7073326248671626,
+        "precision": 0.7918153699738282,
+        "predicted": 4203,
+        "recall": 0.6391396197426541,
+        "reference": 5207,
+        "tp": 3328
+      },
+      "sharing": {
+        "f1": 0.6040485829959514,
+        "precision": 0.4946949602122016,
+        "predicted": 3016,
+        "recall": 0.7754677754677755,
+        "reference": 1924,
+        "tp": 1492
+      },
+      "sharing_all_groups": {
+        "f1": 0.3347918770335465,
+        "precision": 0.3280562884784521,
+        "predicted": 4548,
+        "recall": 0.3418098510882016,
+        "reference": 4365,
+        "tp": 1492
+      },
+      "variation": {
+        "f1": 0.8120491323844804,
+        "precision": 0.8221476510067114,
+        "predicted": 5066,
+        "recall": 0.8021956856702619,
+        "reference": 5192,
+        "tp": 4165
+      }
+    },
+    "model": "qwen-3.8-27b",
+    "sample_count": 1600,
+    "unit_exact_match": {
+      "aligned": 4165,
+      "correct": 2618,
+      "rate": 0.6285714285714286
+    }
+  },
+  {
+    "exact_match_count": 103,
+    "exact_match_rate": 0.064375,
+    "folder": "deepseek-v4.1-flash",
+    "metric_version": "external_channel_sharing_matched_units_v3",
+    "metrics": {
+      "channels": {
+        "f1": 0.5341850163702895,
+        "precision": 0.438339566980983,
+        "predicted": 18983,
+        "recall": 0.6836743077807904,
+        "reference": 12171,
+        "tp": 8321
+      },
+      "encoding": {
+        "f1": 0.9057952294841988,
+        "precision": 0.9136628159471901,
+        "predicted": 11513,
+        "recall": 0.8980619824127039,
+        "reference": 11713,
+        "tp": 10519
+      },
+      "exact_group_structure": {
+        "f1": 0.324726609963548,
+        "precision": 0.2680541624874624,
+        "predicted": 7976,
+        "recall": 0.41178736517719566,
+        "reference": 5192,
+        "tp": 2138
+      },
+      "field_bindings": {
+        "f1": 0.4435397571302285,
+        "precision": 0.3732430210250186,
+        "predicted": 25541,
+        "recall": 0.5464603038119805,
+        "reference": 17445,
+        "tp": 9533
+      },
+      "link_targets": {
+        "f1": 0.2916666666666667,
+        "precision": 0.1991869918699187,
+        "predicted": 984,
+        "recall": 0.5444444444444444,
+        "reference": 360,
+        "tp": 196
+      },
+      "repeated_groups": {
+        "f1": 0.41455696202531644,
+        "precision": 0.3689196108550947,
+        "predicted": 3906,
+        "recall": 0.4730794484569928,
+        "reference": 3046,
+        "tp": 1441
+      },
+      "repetition_slots": {
+        "f1": 0.37383815127483583,
+        "precision": 0.3361963190184049,
+        "predicted": 6520,
+        "recall": 0.42097176877280584,
+        "reference": 5207,
+        "tp": 2192
+      },
+      "sharing": {
+        "f1": 0.44077134986225897,
+        "precision": 0.35328753680078506,
+        "predicted": 2038,
+        "recall": 0.5858421480878763,
+        "reference": 1229,
+        "tp": 720
+      },
+      "sharing_all_groups": {
+        "f1": 0.02277003842443984,
+        "precision": 0.012229091650247978,
+        "predicted": 58876,
+        "recall": 0.16494845360824742,
+        "reference": 4365,
+        "tp": 720
+      },
+      "variation": {
+        "f1": 0.56044957472661,
+        "precision": 0.46263791374122365,
+        "predicted": 7976,
+        "recall": 0.710708782742681,
+        "reference": 5192,
+        "tp": 3690
+      }
+    },
+    "model": "deepseek-v4.1-flash",
+    "sample_count": 1600,
+    "unit_exact_match": {
+      "aligned": 3690,
+      "correct": 1658,
+      "rate": 0.44932249322493223
+    }
+  },
+  {
+    "exact_match_count": 483,
+    "exact_match_rate": 0.301875,
+    "folder": "glm-5.3-flash",
+    "metric_version": "external_channel_sharing_matched_units_v3",
+    "metrics": {
+      "channels": {
+        "f1": 0.8441067830758898,
+        "precision": 0.8628679310048915,
+        "predicted": 11653,
+        "recall": 0.8261441130556241,
+        "reference": 12171,
+        "tp": 10055
+      },
+      "encoding": {
+        "f1": 0.9629604083321838,
+        "precision": 0.9719437482595378,
+        "predicted": 14364,
+        "recall": 0.9541416074357573,
+        "reference": 14632,
+        "tp": 13961
+      },
+      "exact_group_structure": {
+        "f1": 0.7347097024328778,
+        "precision": 0.7395121951219512,
+        "predicted": 5125,
+        "recall": 0.7299691833590138,
+        "reference": 5192,
+        "tp": 3790
+      },
+      "field_bindings": {
+        "f1": 0.7759808414392573,
+        "precision": 0.801257784833313,
+        "predicted": 16378,
+        "recall": 0.7522499283462311,
+        "reference": 17445,
+        "tp": 13123
+      },
+      "link_targets": {
+        "f1": 0.6871794871794872,
+        "precision": 0.638095238095238,
+        "predicted": 420,
+        "recall": 0.7444444444444445,
+        "reference": 360,
+        "tp": 268
+      },
+      "repeated_groups": {
+        "f1": 0.8219931271477663,
+        "precision": 0.8622927180966113,
+        "predicted": 2774,
+        "recall": 0.7852921864740644,
+        "reference": 3046,
+        "tp": 2392
+      },
+      "repetition_slots": {
+        "f1": 0.7926380368098159,
+        "precision": 0.8475836431226765,
+        "predicted": 4573,
+        "recall": 0.7443825619358556,
+        "reference": 5207,
+        "tp": 3876
+      },
+      "sharing": {
+        "f1": 0.7239400111090539,
+        "precision": 0.6606961811422778,
+        "predicted": 2959,
+        "recall": 0.8005733005733006,
+        "reference": 2442,
+        "tp": 1955
+      },
+      "sharing_all_groups": {
+        "f1": 0.46514394480133237,
+        "precision": 0.483791140806731,
+        "predicted": 4041,
+        "recall": 0.44788087056128295,
+        "reference": 4365,
+        "tp": 1955
+      },
+      "variation": {
+        "f1": 0.862653872249685,
+        "precision": 0.8682926829268293,
+        "predicted": 5125,
+        "recall": 0.8570878274268104,
+        "reference": 5192,
+        "tp": 4450
+      }
+    },
+    "model": "glm-5.3-flash",
+    "sample_count": 1600,
+    "unit_exact_match": {
+      "aligned": 4450,
+      "correct": 3176,
+      "rate": 0.7137078651685393
+    }
+  },
+  {
+    "exact_match_count": 430,
+    "exact_match_rate": 0.26875,
+    "folder": "kimi-k3",
+    "metric_version": "external_channel_sharing_matched_units_v3",
+    "metrics": {
+      "channels": {
+        "f1": 0.8393240908516286,
+        "precision": 0.8615051903114187,
+        "predicted": 11560,
+        "recall": 0.8182565113795087,
+        "reference": 12171,
+        "tp": 9959
+      },
+      "encoding": {
+        "f1": 0.966316912680064,
+        "precision": 0.9769850402761795,
+        "predicted": 13904,
+        "recall": 0.9558792484694955,
+        "reference": 14211,
+        "tp": 13584
+      },
+      "exact_group_structure": {
+        "f1": 0.7245297805642633,
+        "precision": 0.7372408293460925,
+        "predicted": 5016,
+        "recall": 0.7122496147919877,
+        "reference": 5192,
+        "tp": 3698
+      },
+      "field_bindings": {
+        "f1": 0.7469497607655502,
+        "precision": 0.780806502031885,
+        "predicted": 15995,
+        "recall": 0.7159071367153912,
+        "reference": 17445,
+        "tp": 12489
+      },
+      "link_targets": {
+        "f1": 0.6727989487516426,
+        "precision": 0.6384039900249376,
+        "predicted": 401,
+        "recall": 0.7111111111111111,
+        "reference": 360,
+        "tp": 256
+      },
+      "repeated_groups": {
+        "f1": 0.7874933757286698,
+        "precision": 0.8523900573613766,
+        "predicted": 2615,
+        "recall": 0.731779382797111,
+        "reference": 3046,
+        "tp": 2229
+      },
+      "repetition_slots": {
+        "f1": 0.7546339930882815,
+        "precision": 0.8298019345923537,
+        "predicted": 4342,
+        "recall": 0.691953140003841,
+        "reference": 5207,
+        "tp": 3603
+      },
+      "sharing": {
+        "f1": 0.6521989629345112,
+        "precision": 0.5496924571058595,
+        "predicted": 3089,
+        "recall": 0.8016997167138811,
+        "reference": 2118,
+        "tp": 1698
+      },
+      "sharing_all_groups": {
+        "f1": 0.39943542695836276,
+        "precision": 0.41044234952864395,
+        "predicted": 4137,
+        "recall": 0.38900343642611684,
+        "reference": 4365,
+        "tp": 1698
+      },
+      "variation": {
+        "f1": 0.852076802507837,
+        "precision": 0.8670255183413078,
+        "predicted": 5016,
+        "recall": 0.8376348228043143,
+        "reference": 5192,
+        "tp": 4349
+      }
+    },
+    "model": "kimi-k3",
+    "sample_count": 1600,
+    "unit_exact_match": {
+      "aligned": 4349,
+      "correct": 2919,
+      "rate": 0.671188779029662
+    }
+  },
+  {
+    "exact_match_count": 173,
+    "exact_match_rate": 0.108125,
+    "folder": "minimax-m3",
+    "metric_version": "external_channel_sharing_matched_units_v3",
+    "metrics": {
+      "channels": {
+        "f1": 0.672311600338696,
+        "precision": 0.6090581643543223,
+        "predicted": 14992,
+        "recall": 0.7502259469230137,
+        "reference": 12171,
+        "tp": 9131
+      },
+      "encoding": {
+        "f1": 0.9299889746416758,
+        "precision": 0.9399076727156956,
+        "predicted": 12564,
+        "recall": 0.9202774314214464,
+        "reference": 12832,
+        "tp": 11809
+      },
+      "exact_group_structure": {
+        "f1": 0.483628086149536,
+        "precision": 0.44333868378812197,
+        "predicted": 6230,
+        "recall": 0.5319722650231125,
+        "reference": 5192,
+        "tp": 2762
+      },
+      "field_bindings": {
+        "f1": 0.597943797121316,
+        "precision": 0.5730425643720441,
+        "predicted": 19030,
+        "recall": 0.6251074806534824,
+        "reference": 17445,
+        "tp": 10905
+      },
+      "link_targets": {
+        "f1": 0.5358974358974359,
+        "precision": 0.4976190476190476,
+        "predicted": 420,
+        "recall": 0.5805555555555556,
+        "reference": 360,
+        "tp": 209
+      },
+      "repeated_groups": {
+        "f1": 0.6236283833211412,
+        "precision": 0.7039636663914121,
+        "predicted": 2422,
+        "recall": 0.5597504924491136,
+        "reference": 3046,
+        "tp": 1705
+      },
+      "repetition_slots": {
+        "f1": 0.5805679469045806,
+        "precision": 0.6696787148594378,
+        "predicted": 3984,
+        "recall": 0.5123871711158057,
+        "reference": 5207,
+        "tp": 2668
+      },
+      "sharing": {
+        "f1": 0.5379090183559457,
+        "precision": 0.478240302743614,
+        "predicted": 2114,
+        "recall": 0.6145896656534955,
+        "reference": 1645,
+        "tp": 1011
+      },
+      "sharing_all_groups": {
+        "f1": 0.10946297098310957,
+        "precision": 0.07166654852201035,
+        "predicted": 14107,
+        "recall": 0.2316151202749141,
+        "reference": 4365,
+        "tp": 1011
+      },
+      "variation": {
+        "f1": 0.6981264226930485,
+        "precision": 0.639967897271268,
+        "predicted": 6230,
+        "recall": 0.7679121725731896,
+        "reference": 5192,
+        "tp": 3987
+      }
+    },
+    "model": "minimax-m3",
+    "sample_count": 1600,
+    "unit_exact_match": {
+      "aligned": 3987,
+      "correct": 2206,
+      "rate": 0.5532982192124404
+    }
+  },
+  {
+    "model": "gemini-3.8-flash",
+    "folder": "gemini-3.8-flash",
+    "sample_count": 1600,
+    "exact_match_count": 547,
+    "exact_match_rate": 0.341875,
+    "metrics": {
+      "variation": {
+        "tp": 4597,
+        "predicted": 4987,
+        "reference": 5192,
+        "precision": 0.9217966713454983,
+        "recall": 0.8854006163328197,
+        "f1": 0.903232144611455
+      },
+      "exact_group_structure": {
+        "tp": 4052,
+        "predicted": 4987,
+        "reference": 5192,
+        "precision": 0.8125125325847202,
+        "recall": 0.7804314329738059,
+        "f1": 0.7961489340799686
+      },
+      "channels": {
+        "tp": 10529,
+        "predicted": 11624,
+        "reference": 12171,
+        "precision": 0.9057983482450104,
+        "recall": 0.8650891463314436,
+        "f1": 0.8849758352595083
+      },
+      "repetition_slots": {
+        "tp": 4006,
+        "predicted": 4510,
+        "reference": 5207,
+        "precision": 0.8882483370288249,
+        "recall": 0.769348953332053,
+        "f1": 0.82453432129258
+      },
+      "repeated_groups": {
+        "tp": 2463,
+        "predicted": 2733,
+        "reference": 3046,
+        "precision": 0.9012074643249177,
+        "recall": 0.8086014445173999,
+        "f1": 0.8523966084097595
+      },
+      "field_bindings": {
+        "tp": 13471,
+        "predicted": 16255,
+        "reference": 17445,
+        "precision": 0.8287296216548754,
+        "recall": 0.7721983376325595,
+        "f1": 0.7994658753709198
+      },
+      "encoding": {
+        "tp": 14548,
+        "predicted": 14934,
+        "reference": 15051,
+        "precision": 0.9741529396009107,
+        "recall": 0.9665802936681948,
+        "f1": 0.9703518425879607
+      },
+      "sharing": {
+        "tp": 2064,
+        "predicted": 3304,
+        "reference": 2532,
+        "precision": 0.6246973365617433,
+        "recall": 0.8151658767772512,
+        "f1": 0.7073337902673064
+      },
+      "sharing_all_groups": {
+        "tp": 2064,
+        "predicted": 4161,
+        "reference": 4365,
+        "precision": 0.4960346070656092,
+        "recall": 0.47285223367697593,
+        "f1": 0.48416608022519353
+      },
+      "link_targets": {
+        "tp": 253,
+        "predicted": 334,
+        "reference": 360,
+        "precision": 0.7574850299401198,
+        "recall": 0.7027777777777777,
+        "f1": 0.729106628242075
+      }
+    },
+    "unit_exact_match": {
+      "correct": 3264,
+      "aligned": 4597,
+      "rate": 0.7100282793125952
+    },
+    "metric_version": "external_channel_sharing_matched_units_v3"
+  }
+]

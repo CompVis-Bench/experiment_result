@@ -1,0 +1,11 @@
+{
+  "annotation_projection": {
+    "link": [
+      "source",
+      "target"
+    ]
+  },
+  "denominator_policy": "All selected images for Full EM and mark recovery; encoding and Unit EM use aligned units; sharing uses aligned endpoints only; sharing_all_groups retains all groups. Internal and external fields are unioned for sharing. Undefined rates are null.",
+  "metric_version": "external_channel_sharing_matched_units_v3",
+  "note": "The source annotations are preserved in newdata; source/target link fields are excluded from the model output target under the new prompt."
+}

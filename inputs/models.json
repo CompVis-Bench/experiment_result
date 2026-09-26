@@ -1,0 +1,92 @@
+{
+  "dataset": "newdata",
+  "models": [
+    {
+      "folder": "gpt-6-astra",
+      "id": "gpt-6-astra",
+      "parameters": {
+        "max_tokens": 32768
+      }
+    },
+    {
+      "folder": "gpt-6-sol",
+      "id": "gpt-6-sol",
+      "parameters": {
+        "max_tokens": 32768
+      }
+    },
+    {
+      "folder": "claude-opus-5-5",
+      "id": "claude-opus-5-5",
+      "parameters": {
+        "max_tokens": 32768
+      }
+    },
+    {
+      "folder": "claude-fable-5-1",
+      "id": "claude-fable-5-1",
+      "parameters": {
+        "max_tokens": 32768
+      }
+    },
+    {
+      "folder": "grok-4.7",
+      "id": "grok-4.7",
+      "parameters": {
+        "max_tokens": 32768
+      }
+    },
+    {
+      "folder": "qwen3.8-max-2026-09-02",
+      "id": "qwen3.8-max-2026-09-02",
+      "parameters": {
+        "max_tokens": 32768,
+        "response_format": {
+          "type": "json_object"
+        }
+      }
+    },
+    {
+      "folder": "qwen-3.8-27b",
+      "id": "qwen-3.8-27b",
+      "parameters": {
+        "max_tokens": 32768,
+        "response_format": {
+          "type": "json_object"
+        }
+      }
+    },
+    {
+      "folder": "deepseek-v4.1-flash",
+      "id": "deepseek-v4.1-flash",
+      "parameters": {
+        "max_tokens": 32768,
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    {
+      "folder": "glm-5.3-flash",
+      "id": "glm-5.3-flash",
+      "parameters": {
+        "max_tokens": 65536
+      }
+    },
+    {
+      "folder": "kimi-k3",
+      "id": "kimi-k3",
+      "parameters": {
+        "max_completion_tokens": 32768
+      }
+    },
+    {
+      "folder": "minimax-m3",
+      "id": "minimax-m3",
+      "parameters": {
+        "enable_thinking": false,
+        "max_tokens": 32768
+      }
+    }
+  ]
+}

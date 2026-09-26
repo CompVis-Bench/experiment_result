@@ -1,0 +1,79 @@
+Recover independently visible chart/mark-group templates, their internal encodings, external position, size and color bindings, and link dependencies from the image. Return only {"charts":[...]} matching the supplied dataset-specific chart_encoding_external_v5 schema (38 allowed variations). No markdown, family, chart_type, metadata, explanations or field inventory.
+
+Each ordinary chart has exactly chart_id, variation, encodings, external_encodings. external_encodings always contains position (an unordered field-ID array) and may additionally contain size and color (one field ID each). A link additionally has link_targets, an unordered distinct list of chart IDs identifying the groups whose marks it connects. Do not list every nearby chart. Connections within one group name that group once. A link may not refer to itself or another link. Use [] only when the dependent group is genuinely unidentifiable; never guess an attachment. Do not encode C IDs as F fields. link_targets does not assert edge direction, instance-level endpoints, shared fields, or external repetition.
+
+Synthetic example, not the answer for this image:
+{"charts":[{"chart_id":"C1","variation":"point","encodings":{"position.x":"F1","position.y":"F2"},"external_encodings":{"position":[]}},{"chart_id":"C2","variation":"pie/donut/radial_bar","encodings":{"position.theta":"F3","color":"F4"},"external_encodings":{"position":["F1","F2"],"size":"F6"}},{"chart_id":"C3","variation":"link","encodings":{"stroke.width":"F5"},"external_encodings":{"position":[]},"link_targets":["C2"]}]}
+
+CANONICAL VARIATIONS
+Use tree for both trees and dendrograms; do not output dendrogram. A native tree includes its hierarchical connections; do not decompose it into node glyphs plus link merely because it has edges. This label merge does not merge distinct encoding-system units or invent bindings. Preserve observed Cartesian or polar position, node size/color and edge stroke bindings. radial_tree remains a separate allowed variation and also includes its native connections.
+Use point for scatterplot (including one-dimensional point arrangements), rect_heatmap for rectangular heatmaps, pie/donut/radial_bar for pie, donut and radial-bar charts, and multi_line for storyline. These spelling equivalences do not add encodings or fields. Do not output graph or sankey: describe the actual node glyph templates and a separate link that names their chart IDs in link_targets. Graph decomposition is structural, not an automatic label alias.
+Pie, donut, sector_bar and radial_bar use the single canonical name pie/donut/radial_bar. This is label equivalence only: preserve the observed theta, radius and color bindings. Constant radii, fixed holes and outlines are not data encodings. Never manufacture a radius binding merely because the label is radial_bar.
+Do not use divergent_bar or divergent_stacked_bar. A single signed value per category uses bar; multiple stacked values per category use stacked_bar, including stacks on both sides of zero. Side-by-side series use grouped_bar. Equal-size discrete units still use unit_bar; remove the divergent prefix without losing the unit structure. A grouped bar's category and series offset/color are internal, not automatic chart repetition.
+Do not output map: geographic basemaps are context. Keep actual geo_point, geo_line or geo_area data encodings. Do not delete the entire image because it includes a map.
+Multiple axes linked by item traces use parallel_coordinates, even when heatmaps replace the axes. Native line series sharing one coordinate system use multi_line; repeated whole line coordinate systems use single_line plus external fields. Streamgraphs use stacked_area.
+
+INTERNAL ENCODINGS
+Each native channel maps to ONE anonymous field ID. Omit unidentifiable or constant bindings; never invent detail fields. Follow the exact per-variation whitelist in the schema. point, single_line, connected_scatterplot and multi_line support Cartesian position.x/y or polar position.theta/radius when visible. Do not replace polar coordinates with invented Cartesian data fields.
+plain_area supports position.x2 and position.y2: a vertical interval band uses x, y=one boundary, y2=the other boundary; a horizontal band may use y, x and x2. A second boundary is not another chart, field repetition or a fabricated series. A one-dimensional heatmap may have x and color only, or y and color only. A decorative row grid does not supply a second data axis.
+For non-tree node-link and flow diagrams, identify actual node glyphs (point, rect_heatmap, bar, etc.). Their internal encodings belong to the glyph template; fields positioning repeated glyph templates belong to external_encodings.position. Put connections in link, with stroke.width/stroke.color only when identifiable as visible data bindings; omit constant line width or color. Never output source or target in encodings, even when endpoints are identifiable: instance-level endpoint pairings belong only to internal data and rendering inputs, not to the annotation. link_targets names the actual connected chart-template IDs, including embedded charts or whole repeated chart instances when these are the visible endpoints; a link cannot target itself or another link. Never add a graph container or duplicate node marks. Do not infer conservation totals or a shared field solely from the attachment. Keep independently observable enclosing layout fields on the node templates.
+Use stroke.color to distinguish tree/flow edge color from native node color when both roles matter. For link, use only stroke.color for edge color (v1 color migrates to this slot); do not emit color or duplicate a single edge encoding. Native trees and parallel coordinates already include their own connections: do not automatically duplicate them as links. Sankey-style flows use the explicit node-glyph plus link decomposition above.
+
+EXTERNAL ENCODINGS
+External bindings describe a whole chart-template instance: where it is placed (position), how large the entire instance is (size), or a data-driven color applied to the whole instance (color). These are independent of the native per-variation channel whitelist. A pie whose total footprint encodes population uses external_encodings.size; its wedge angles and category colors remain internal. A single color applied to an entire repeated chart may be external color; colors distinguishing marks or series within that chart are internal. Do not duplicate one binding across scopes. Fixed panel sizes, styling, selection highlights and decorative backgrounds are not data encodings. Do not add size/color merely because instances are repeated.
+external_encodings.position is an unordered distinct list of F IDs controlling chart-template instances, not a count of marks, a boolean, or x/y labels. The list length is the number of independently identified positioning fields. Carry independent enclosing facet factors into each repeated constituent. A wrapped grid controlled by one field is one dimension. Reusing a field does not create another dimension.
+For each template, identify all independent data fields that control where its instances are positioned. For nested repetition, flatten the positional fields from every enclosing repetition level together with the template's own external positioning fields into one unordered position-field list, deduplicated by field identity. The list length is the number of independent positioning fields controlling the instance, not the number of screen axes or nesting levels. Keep distinct independently observable fields separate, and count a reused field only once. Do not invent a field merely because another nesting level exists; include only fields supported by the image.
+Reuse a parent's actual positional fields for nested glyphs when observable. For example, pies at tree nodes positioned by F1=angle and F2=depth have external_encodings={"position":["F1","F2"]}. Their internal wedge theta is a separate field. Do not replace the two visible parent position fields with a synthetic node identity. Conversely, arbitrary unlabeled geometry alone does not prove two data fields; omit genuinely unknown factors.
+Ordinary bars, heatmap cells, scatter points and graph nodes within one system do not automatically repeat chart coordinate systems. Separate line and point systems within repeated panels inherit the same external fields. Mere visual proximity does not create a shared field or facet factor.
+
+UNITIZATION AND IDENTITY
+Independent charts of different variables are separate charts with separate fields, even if they share a mark type, axis direction, or a generic count label. For seven independent histogram panels, emit seven bars, not one repeated bar with invented shared x/y fields. A point drawn on a line is not automatically a separate point system. Include visible background heatmaps and marginal areas as their own templates when they encode data.
+Use C1... for chart IDs and anonymous F1... consistently across the whole image. One item is one independently identifiable variation/encoding-role system; repeated instances share one item. Distinct systems with different roles stay separate even after their variation labels merge. Fields are reused only for the same observable role, not because colors or axis directions match. Source and target roles may remain different fields even if their node domains coincide.
+Ignore titles, ticks, selection outlines, decorative background maps and callout borders. Do not turn image-unobservable VAID/source facts into bindings. Check native channels before sharing fields. Validate link target IDs after adding/removing charts. Return JSON only.
+
+COMPLETE ALLOWED VARIATIONS AND NATIVE CHANNELS
+The following 38 variations are the complete allowed output vocabulary for this dataset. Select only these exact labels, based on the supplied image. The listed channels are permitted, not required: include only observable data bindings. Do not infer a binding from the fact that its channel is allowed. Do not infer labels or bindings from class frequencies.
+bar: color, position.x, position.y
+calendar_heatmap: color, position.x, position.y
+circlepacking: color, size
+connected_scatterplot: color, position.radius, position.theta, position.x, position.y, shape, size
+contour: color, position.x, position.y
+dotplot: position.x, position.y
+euler_venn: color
+geo_area: color, position.x, position.y
+geo_line: color, position.x, position.y, stroke.width
+geo_point: color, position.x, position.y, size
+grouped_bar: color, position.x, position.x_offset, position.y, position.y_offset
+hexbin: color, position.x, position.y
+horizon_chart: color, position.x, position.y
+icicle: color, position.x, position.y
+link: stroke.color, stroke.width
+multi_boxplot: color, position.x, position.y
+multi_line: color, position.radius, position.theta, position.x, position.y
+multi_radar: color, position.radius, position.theta
+normalized_stacked_bar: color, position.x, position.y
+parallel_coordinates: color, position.x, position.y
+pie/donut/radial_bar: color, position.radius, position.theta
+plain_area: position.x, position.x2, position.y, position.y2
+point: color, position.radius, position.theta, position.x, position.y, shape, size
+radial_area: color, position.radius, position.theta
+radial_tree: color, position.radius, position.theta, stroke.color, stroke.width
+rect_heatmap: color, position.x, position.y
+single_boxplot: color, position.x, position.y
+single_line: position.radius, position.theta, position.x, position.y
+single_radar: color, position.radius, position.theta
+stacked_area: color, position.x, position.y
+stacked_bar: color, position.x, position.y
+sunburst: color, position.radius, position.theta
+tick_plot: color, position.x
+tree: color, position.radius, position.theta, position.x, position.y, size, stroke.color, stroke.width
+treemap: color, size
+unit_bar: color, position.x, position.y
+violin: position.x, position.y
+word_cloud: color, size, text
+
+OUTPUT AND CONSISTENCY CHECKS
+Return exactly one JSON object with only the top-level key "charts". It is an array of at most 64 chart templates; return [] if no chart template can be identified. Chart IDs must be unique C1, C2, ...; fields must be anonymous F1, F2, ... and consistent throughout this image. Never output null, comments, trailing commas, confidence values or prose. Each encodings value is one F ID string, not an array. external_encodings.position and link_targets are arrays with no duplicate entries. Use {"position":[]} when no external binding is identifiable; omit absent size/color keys. Do not output the legacy repetition_position key. Only link has link_targets; all links must include it.
+Include a template only when its variation can be identified using an allowed label; omit an unidentifiable template rather than forcing a label. Unknown or constant bindings of identified variations are omitted rather than assigned placeholder fields. Do not add an unknown-class label.
+Use the same F ID across internal and external scopes only when the image supports the same actual field. For evaluation, each unit's field set is the union of its internal encoding fields and external position, size and color fields. Two units share a field whenever the same F ID occurs in both sets, including internal-to-external reuse. Every occurrence must still use the correct channel and scope; a shared ID alone does not establish a correct binding. Do not output a separate sharing relation or synthetic field inventory.
+Before answering, check unitization, each variation's allowed channels, the distinction between internal and whole-unit external encodings, every field reuse, and all link target references. Do not use the synthetic example as the answer. Return only the JSON object for the supplied image.

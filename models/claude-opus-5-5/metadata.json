@@ -1,0 +1,121 @@
+{
+  "files": {
+    "predictions": "models/claude-opus-5-5/predictions.jsonl.gz",
+    "runs": "models/claude-opus-5-5/runs.jsonl.gz",
+    "scores": "models/claude-opus-5-5/scores.json.gz"
+  },
+  "max_image_bytes": 0,
+  "max_image_dimension": 8000,
+  "model": "claude-opus-5-5",
+  "notes": [
+    "Images were resized before request when needed; aspect ratio was preserved."
+  ],
+  "parameters": {
+    "max_tokens": 32768
+  },
+  "sample_count": 1600,
+  "score_count": 1600,
+  "score_summary": {
+    "exact_match_count": 599,
+    "exact_match_rate": 0.374375,
+    "metrics": {
+      "channels": {
+        "f1": 0.9161020493517357,
+        "precision": 0.9329585143538632,
+        "predicted": 11739,
+        "recall": 0.8998438912168268,
+        "reference": 12171,
+        "tp": 10952
+      },
+      "encoding": {
+        "f1": 0.9663410022061141,
+        "precision": 0.9699481209667214,
+        "predicted": 15806,
+        "recall": 0.9627606129113289,
+        "reference": 15924,
+        "tp": 15331
+      },
+      "exact_group_structure": {
+        "f1": 0.809778903282361,
+        "precision": 0.8191133004926109,
+        "predicted": 5075,
+        "recall": 0.8006548536209553,
+        "reference": 5192,
+        "tp": 4157
+      },
+      "field_bindings": {
+        "f1": 0.8356758022956196,
+        "precision": 0.8541329981444903,
+        "predicted": 16707,
+        "recall": 0.817999426769848,
+        "reference": 17445,
+        "tp": 14270
+      },
+      "link_targets": {
+        "f1": 0.8057971014492754,
+        "precision": 0.8424242424242424,
+        "predicted": 330,
+        "recall": 0.7722222222222223,
+        "reference": 360,
+        "tp": 278
+      },
+      "repeated_groups": {
+        "f1": 0.8942454591750127,
+        "precision": 0.925834797891037,
+        "predicted": 2845,
+        "recall": 0.8647406434668418,
+        "reference": 3046,
+        "tp": 2634
+      },
+      "repetition_slots": {
+        "f1": 0.8732394366197183,
+        "precision": 0.9169659835199662,
+        "predicted": 4733,
+        "recall": 0.8334933743038218,
+        "reference": 5207,
+        "tp": 4340
+      },
+      "sharing": {
+        "f1": 0.7074585635359116,
+        "precision": 0.6270812928501469,
+        "predicted": 4084,
+        "recall": 0.8114702154626109,
+        "reference": 3156,
+        "tp": 2561
+      },
+      "sharing_all_groups": {
+        "f1": 0.5663423264042459,
+        "precision": 0.5473391750374011,
+        "predicted": 4679,
+        "recall": 0.5867124856815579,
+        "reference": 4365,
+        "tp": 2561
+      },
+      "variation": {
+        "f1": 0.936592967760787,
+        "precision": 0.9473891625615763,
+        "predicted": 5075,
+        "recall": 0.926040061633282,
+        "reference": 5192,
+        "tp": 4808
+      }
+    },
+    "sample_count": 1600,
+    "statuses": {
+      "valid": 1600
+    },
+    "unit_exact_match": {
+      "aligned": 4808,
+      "correct": 3366,
+      "rate": 0.7000831946755408
+    }
+  },
+  "selection_policy": "First valid complete response, with bounded invalid/truncated-output retries. Never select by score.",
+  "source_score_sha256": "9a71096ff241bbfeac9027b0e9dac0c2d72edbdbb8863be031b55fc5c7cd0510",
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  },
+  "valid_prediction_count": 1600,
+  "valid_run_count": 1600
+}

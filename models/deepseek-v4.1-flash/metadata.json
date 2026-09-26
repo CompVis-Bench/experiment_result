@@ -1,0 +1,121 @@
+{
+  "files": {
+    "predictions": "models/deepseek-v4.1-flash/predictions.jsonl.gz",
+    "runs": "models/deepseek-v4.1-flash/runs.jsonl.gz",
+    "scores": "models/deepseek-v4.1-flash/scores.json.gz"
+  },
+  "max_image_bytes": 0,
+  "max_image_dimension": 0,
+  "model": "deepseek-v4.1-flash",
+  "parameters": {
+    "max_tokens": 32768,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "sample_count": 1600,
+  "score_count": 1600,
+  "score_summary": {
+    "exact_match_count": 103,
+    "exact_match_rate": 0.064375,
+    "metrics": {
+      "channels": {
+        "f1": 0.5341850163702895,
+        "precision": 0.438339566980983,
+        "predicted": 18983,
+        "recall": 0.6836743077807904,
+        "reference": 12171,
+        "tp": 8321
+      },
+      "encoding": {
+        "f1": 0.9057952294841988,
+        "precision": 0.9136628159471901,
+        "predicted": 11513,
+        "recall": 0.8980619824127039,
+        "reference": 11713,
+        "tp": 10519
+      },
+      "exact_group_structure": {
+        "f1": 0.324726609963548,
+        "precision": 0.2680541624874624,
+        "predicted": 7976,
+        "recall": 0.41178736517719566,
+        "reference": 5192,
+        "tp": 2138
+      },
+      "field_bindings": {
+        "f1": 0.4435397571302285,
+        "precision": 0.3732430210250186,
+        "predicted": 25541,
+        "recall": 0.5464603038119805,
+        "reference": 17445,
+        "tp": 9533
+      },
+      "link_targets": {
+        "f1": 0.2916666666666667,
+        "precision": 0.1991869918699187,
+        "predicted": 984,
+        "recall": 0.5444444444444444,
+        "reference": 360,
+        "tp": 196
+      },
+      "repeated_groups": {
+        "f1": 0.41455696202531644,
+        "precision": 0.3689196108550947,
+        "predicted": 3906,
+        "recall": 0.4730794484569928,
+        "reference": 3046,
+        "tp": 1441
+      },
+      "repetition_slots": {
+        "f1": 0.37383815127483583,
+        "precision": 0.3361963190184049,
+        "predicted": 6520,
+        "recall": 0.42097176877280584,
+        "reference": 5207,
+        "tp": 2192
+      },
+      "sharing": {
+        "f1": 0.44077134986225897,
+        "precision": 0.35328753680078506,
+        "predicted": 2038,
+        "recall": 0.5858421480878763,
+        "reference": 1229,
+        "tp": 720
+      },
+      "sharing_all_groups": {
+        "f1": 0.02277003842443984,
+        "precision": 0.012229091650247978,
+        "predicted": 58876,
+        "recall": 0.16494845360824742,
+        "reference": 4365,
+        "tp": 720
+      },
+      "variation": {
+        "f1": 0.56044957472661,
+        "precision": 0.46263791374122365,
+        "predicted": 7976,
+        "recall": 0.710708782742681,
+        "reference": 5192,
+        "tp": 3690
+      }
+    },
+    "sample_count": 1600,
+    "statuses": {
+      "valid": 1600
+    },
+    "unit_exact_match": {
+      "aligned": 3690,
+      "correct": 1658,
+      "rate": 0.44932249322493223
+    }
+  },
+  "selection_policy": "First valid complete response, with bounded invalid/truncated-output retries. Never select by score.",
+  "source_score_sha256": "128b6481ed0191c8727f2f00889afb070b0b4a278dd4baf002a64f5f21c64571",
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  },
+  "valid_prediction_count": 1600,
+  "valid_run_count": 1600
+}

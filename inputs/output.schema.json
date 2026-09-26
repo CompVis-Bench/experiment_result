@@ -1,0 +1,1473 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "chart_encoding_external_v5",
+  "description": "Dataset-specific output contract: 38 variations and internal/external encoding bindings.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "charts"
+  ],
+  "properties": {
+    "charts": {
+      "type": "array",
+      "maxItems": 64,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "bar"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "calendar_heatmap"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "circlepacking"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "size": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "connected_scatterplot"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.radius": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.theta": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "shape": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "size": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "contour"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "dotplot"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "euler_venn"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "geo_area"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "geo_line"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "stroke.width": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "geo_point"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "size": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "grouped_bar"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x_offset": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y_offset": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "hexbin"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "horizon_chart"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "icicle"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings",
+              "link_targets"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "link"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "stroke.color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "stroke.width": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              },
+              "link_targets": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "$ref": "#/$defs/chart_id"
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "multi_boxplot"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "multi_line"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.radius": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.theta": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "multi_radar"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.radius": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.theta": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "normalized_stacked_bar"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "parallel_coordinates"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "pie/donut/radial_bar"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.radius": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.theta": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "plain_area"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x2": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y2": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "point"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.radius": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.theta": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "shape": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "size": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "radial_area"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.radius": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.theta": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "radial_tree"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.radius": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.theta": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "stroke.color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "stroke.width": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "rect_heatmap"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "single_boxplot"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "single_line"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "position.radius": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.theta": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "single_radar"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.radius": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.theta": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "stacked_area"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "stacked_bar"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "sunburst"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.radius": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.theta": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "tick_plot"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "tree"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.radius": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.theta": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "size": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "stroke.color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "stroke.width": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "treemap"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "size": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "unit_bar"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "violin"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "position.x": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "position.y": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "variation",
+              "encodings",
+              "external_encodings"
+            ],
+            "properties": {
+              "chart_id": {
+                "$ref": "#/$defs/chart_id"
+              },
+              "variation": {
+                "const": "word_cloud"
+              },
+              "encodings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "color": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "size": {
+                    "$ref": "#/$defs/field"
+                  },
+                  "text": {
+                    "$ref": "#/$defs/field"
+                  }
+                }
+              },
+              "external_encodings": {
+                "$ref": "#/$defs/external_encodings"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "field": {
+      "type": "string",
+      "pattern": "^F[1-9][0-9]*$"
+    },
+    "chart_id": {
+      "type": "string",
+      "pattern": "^C[1-9][0-9]*$"
+    },
+    "external_encodings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "position"
+      ],
+      "properties": {
+        "position": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/field"
+          }
+        },
+        "size": {
+          "$ref": "#/$defs/field"
+        },
+        "color": {
+          "$ref": "#/$defs/field"
+        }
+      }
+    }
+  }
+}

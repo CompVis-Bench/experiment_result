@@ -1,0 +1,9 @@
+{
+  "all_valid_and_scored": true,
+  "archived_at": "2026-09-26T09:22:59.578822+00:00",
+  "model_requests_during_archiving": 0,
+  "models": 12,
+  "samples_per_model": 1600,
+  "status": "complete",
+  "total_model_samples": 19200
+}

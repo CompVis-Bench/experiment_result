@@ -1,0 +1,122 @@
+{
+  "files": {
+    "predictions": "models/minimax-m3/predictions.jsonl.gz",
+    "runs": "models/minimax-m3/runs.jsonl.gz",
+    "scores": "models/minimax-m3/scores.json.gz"
+  },
+  "max_image_bytes": 0,
+  "max_image_dimension": 0,
+  "model": "minimax-m3",
+  "notes": [
+    "Thinking was disabled for this run; the parser also removes any residual think block before JSON validation."
+  ],
+  "parameters": {
+    "enable_thinking": false,
+    "max_tokens": 32768
+  },
+  "sample_count": 1600,
+  "score_count": 1600,
+  "score_summary": {
+    "exact_match_count": 173,
+    "exact_match_rate": 0.108125,
+    "metrics": {
+      "channels": {
+        "f1": 0.672311600338696,
+        "precision": 0.6090581643543223,
+        "predicted": 14992,
+        "recall": 0.7502259469230137,
+        "reference": 12171,
+        "tp": 9131
+      },
+      "encoding": {
+        "f1": 0.9299889746416758,
+        "precision": 0.9399076727156956,
+        "predicted": 12564,
+        "recall": 0.9202774314214464,
+        "reference": 12832,
+        "tp": 11809
+      },
+      "exact_group_structure": {
+        "f1": 0.483628086149536,
+        "precision": 0.44333868378812197,
+        "predicted": 6230,
+        "recall": 0.5319722650231125,
+        "reference": 5192,
+        "tp": 2762
+      },
+      "field_bindings": {
+        "f1": 0.597943797121316,
+        "precision": 0.5730425643720441,
+        "predicted": 19030,
+        "recall": 0.6251074806534824,
+        "reference": 17445,
+        "tp": 10905
+      },
+      "link_targets": {
+        "f1": 0.5358974358974359,
+        "precision": 0.4976190476190476,
+        "predicted": 420,
+        "recall": 0.5805555555555556,
+        "reference": 360,
+        "tp": 209
+      },
+      "repeated_groups": {
+        "f1": 0.6236283833211412,
+        "precision": 0.7039636663914121,
+        "predicted": 2422,
+        "recall": 0.5597504924491136,
+        "reference": 3046,
+        "tp": 1705
+      },
+      "repetition_slots": {
+        "f1": 0.5805679469045806,
+        "precision": 0.6696787148594378,
+        "predicted": 3984,
+        "recall": 0.5123871711158057,
+        "reference": 5207,
+        "tp": 2668
+      },
+      "sharing": {
+        "f1": 0.5379090183559457,
+        "precision": 0.478240302743614,
+        "predicted": 2114,
+        "recall": 0.6145896656534955,
+        "reference": 1645,
+        "tp": 1011
+      },
+      "sharing_all_groups": {
+        "f1": 0.10946297098310957,
+        "precision": 0.07166654852201035,
+        "predicted": 14107,
+        "recall": 0.2316151202749141,
+        "reference": 4365,
+        "tp": 1011
+      },
+      "variation": {
+        "f1": 0.6981264226930485,
+        "precision": 0.639967897271268,
+        "predicted": 6230,
+        "recall": 0.7679121725731896,
+        "reference": 5192,
+        "tp": 3987
+      }
+    },
+    "sample_count": 1600,
+    "statuses": {
+      "valid": 1600
+    },
+    "unit_exact_match": {
+      "aligned": 3987,
+      "correct": 2206,
+      "rate": 0.5532982192124404
+    }
+  },
+  "selection_policy": "First valid complete response, with bounded invalid/truncated-output retries. Never select by score.",
+  "source_score_sha256": "834d0885a22f9f35bd522b6f3e779f095af334672fe869d2f9211d2248b3836d",
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  },
+  "valid_prediction_count": 1600,
+  "valid_run_count": 1600
+}
