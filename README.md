@@ -12,6 +12,11 @@ paths, API keys, raw HTTP requests, or raw HTTP responses. Model names and
 returned model identifiers are retained because they identify the evaluated
 systems rather than the authors.
 
+## Project links
+
+- Project page: https://compvis-bench.github.io/
+- Randomized renderer: https://compvis-bench.github.io/randomized_renderer/
+
 ## Contents
 
 - `comparison.csv` / `comparison.json`: aggregate evaluator metrics.
